@@ -1,38 +1,375 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+.Header{
+  background-color: red;
+  height: 100px;
+  width: 100%;
+  color: white;
+  display: flex;
+}
+.Header h1{
+  padding: 25px 0px 20px 50px;
+  font-size: 40px;
+  width: 200px;
+}
+.Header a img, .Header a{
+  width: auto;
+  height: 40px;
+  margin-left: auto;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+.vijesti{
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vijest1,.vijest2{
+  width: 600px;
+  height: 370px;
+  border-right: 3px red solid;
+  border-top: 3px red solid;
+  border-left: 1px grey solid;
+  border-bottom: 1px grey solid;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 15px;
+}
+.vijest1:hover,.vijest2:hover{
+  border-right: 6px red solid;
+  border-top: 6px red solid;
+}
+.vijest1 h2,.vijest2 h2{
+  padding-bottom: 10px;
+}
+.vijest1 img{
+  width: 580px;
+  border-bottom-left-radius: 20px;
+}
+.vijest2{
+  margin-top: 20px;
+  width: 400px;
+  height: 310px;
+}
+.vijest2 h3{
+  padding-bottom: 10px;
+}
+.vijest2 img{
+  border-bottom-left-radius: 10px;
+  width: 380px;
+}
+.linkovi{
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+td{
+  width: 150px;
+}
+.linkovi:hover{
+  background-color: black;
+}
+table{
+  padding: 20px;
+  width: 100%;
+}
+.O{
+  height: 850px;
+}
+.O h1,.Povijest h1,.VozaciTimovi h1,.Pocetna h1{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.O hr, .Povijest hr,.VozaciTimovi hr,.Pocetna hr{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.O p,.Povijest p{
+  text-indent: 20px;
+  margin: 5px 20px;
+  font-size: 16px;
+}
+.O h2{
+  text-align: center;
+  margin-top: 50px;
+}
+.Povijest{
+  height: 1200px;
+}
+.slikaDesno img,.slikaLivo img{
+  width: 400px;
+}
+.slikaDesno{
+  width: 400px;
+  border: 7px black double;
+  margin: 0px 40px 0px 10px;
+  text-align: center;
+  float: right;
+  padding: 3px;
+}
+.slikaLivo{
+  border: 7px black double;
+  margin: 30px 40px 20px 40px;
+  text-align: center;
+  float: left;
+  padding: 3px;
+}
+.botun{
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  text-align: center;
+  border-radius: 5px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.botun:hover{
+  background-color: black;
+}
+.regiPoz,.prijavaPoz,.Dobrodoslica{
+  background-image: url("./Slike/slika6.webp");
+  background-repeat: no-repeat;
+  background-position:auto ;
+  background-position-y: 95%;
+  background-size: cover;
+  height: 700px;
+  padding-top: 50px;
+}
+.registracija,.prijava,.DobrodoslicaTekst{
+  background-color: white;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 30px;
+  border: 2px solid red;
+}
+.Dobrodoslica .linkovi{
+  margin: 0px;
+}
+.DobrodoslicaTekst{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.DobrodoslicaTekst p{
+  margin-top: 10px;
+} 
+.registracija input,.registracija select,.prijava input,.prijava select{
+  margin: 5px 10px 8px 10px;
+  width: 200px;
+  background-color: white;
+  padding-left: 4px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.regiPoz .linkovi,.prijava .linkovi{
+  margin: 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Footer{
+  background-color: rgb(171, 171, 171);
   color: white;
+  width: 100%;
+  height: 100px;
 }
-
-.App-link {
-  color: #61dafb;
+.Footer p{
+  text-align: center;
+  padding-top: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Timovi{
+  display: grid;
+  grid-template-columns: repeat(2,465px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 950px;
+  gap: 20px;
+}
+.mjesto{
+  width: 50px;
+  float: left;
+}
+.bodovi{
+  width: 300px;
+  float: right;
+  text-align: right;
+}
+.ime{
+  width: 465px;
+  float: left;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  width: 400px;
+}
+.vozac1{
+  width: 195px;
+  float: left;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom-right-radius: 10px;
+  padding: 2px 10px;
+}
+.vozac2{
+  width: 195px;
+  float: right;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom-right-radius: 10px;
+  padding: 2px 10px;
+}
+.Timovi img{
+  width: 450px;
+}
+.RedBull .ime{
+  border-left: rgb(54,113,198) solid 5px;
+  border-bottom: rgb(54,113,198) solid 5px;
+}
+.RedBull{
+  border-right: 1px solid rgb(54,113,198);
+  border-top: 1px solid rgb(54,113,198);
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.RedBull:hover{
+  border-right: 5px solid rgb(54,113,198);
+  border-top: 5px solid rgb(54,113,198);
+}
+.Ferrari .ime{
+  border-left: rgb(232,0,45) solid 5px;
+  border-bottom: rgb(232,0,45) solid 5px;
+}
+.Ferrari{
+  border-right: 1px solid rgb(232,0,45);
+  border-top: 1px solid rgb(232,0,45);
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.Ferrari:hover{
+  border-right: 5px solid rgb(232,0,45);
+  border-top: 5px solid rgb(232,0,45);
+}
+.McLaren .ime{
+  border-left: rgb(255,128,0) solid 5px;
+  border-bottom: rgb(255,128,0) solid 5px;
+}
+.McLaren{
+  border-right: 1px solid rgb(255,128,0);
+  border-top: 1px solid rgb(255,128,0);
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.McLaren:hover{
+  border-right: 5px solid rgb(255,128,0);
+  border-top: 5px solid rgb(255,128,0);
+}
+.Mercedes .ime{
+  border-left: rgb(39,244,210) solid 5px;
+  border-bottom: rgb(39,244,210) solid 5px;
+}
+.Mercedes{
+  border-right: 1px solid rgb(39,244,210);
+  border-top: 1px solid rgb(39,244,210);
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.Mercedes:hover{
+  border-right: 5px solid rgb(39,244,210);
+  border-top: 5px solid rgb(39,244,210);
+}
+.AstonMartin .ime{
+  border-left: rgb(34,153,113) solid 5px;
+  border-bottom: rgb(34,153,113) solid 5px;
+}
+.AstonMartin{
+  border-right: 1px solid rgb(34,153,113);
+  border-top: 1px solid rgb(34,153,113);
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.AstonMartin:hover{
+  border-right: 5px solid rgb(34,153,113);
+  border-top: 5px solid rgb(34,153,113);
+}
+.RB .ime{
+  border-left: rgb(102,146,255) solid 5px;
+  border-bottom: rgb(102,146,255) solid 5px;
+}
+.RB{
+  border-right: 1px solid rgb(102,146,255);
+  border-top: 1px solid rgb(102,146,255);
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.RB:hover{
+  border-right: 5px solid rgb(102,146,255);
+  border-top: 5px solid rgb(102,146,255); 
+}
+.Haas .ime{
+  border-left: rgb(182,186,189) solid 5px;
+  border-bottom: rgb(182,186,189) solid 5px;
+}
+.Haas{
+  border-right: 1px solid rgb(182,186,189);
+  border-top: 1px solid rgb(182,186,189);
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.Haas:hover{
+  border-right: 5px solid rgb(182,186,189);
+  border-top: 5px solid rgb(182,186,189);
+}
+.Alpine .ime{
+  border-left: rgb(33,115,184) solid 5px;
+  border-bottom: rgb(33,115,184) solid 5px;
+}
+.Alpine{
+  border-right: 1px solid rgb(33,115,184);
+  border-top: 1px solid rgb(33,115,184);
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.Alpine:hover{
+  border-right: 5px solid rgb(33,115,184);
+  border-top: 5px solid rgb(33,115,184);
+}
+.Williams .ime{
+  border-left: rgb(100,196,255) solid 5px;
+  border-bottom: rgb(100,196,255 ) solid 5px;
+}
+.Williams{
+  border-right: 1px solid rgb(100,196,255);
+  border-top: 1px solid rgb(100,196,255);
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.Williams:hover{
+  border-right: 5px solid rgb(100,196,255);
+  border-top: 5px solid rgb(100,196,255);
+}
+.Sauber .ime{
+  border-left: rgb(82,226,82) solid 5px;
+  border-bottom: rgb(82,226,82) solid 5px;
+}
+.Sauber{
+  border-right: 1px solid rgb(82,226,82);
+  border-top: 1px solid rgb(82,226,82);
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.Sauber:hover{
+  border-right: 5px solid rgb(82,226,82);
+  border-top: 5px solid rgb(82,226,82);
 }
